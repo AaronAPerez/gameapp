@@ -12,7 +12,7 @@ const ColorModeSwitch = () => {
         { colorMode === 'dark' ?  <Text>Dark Mode</Text> : <Text>Light Mode</Text> }
         </HStack>
     </>
-  )
-}
+  );
+};
 
 export default ColorModeSwitch

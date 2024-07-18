@@ -27,7 +27,7 @@ const GameCard = ({game}:GameProps) => {
             </CardBody>
         </Card>
     </>
-  )
-}
+  );
+};
 
 export default GameCard
