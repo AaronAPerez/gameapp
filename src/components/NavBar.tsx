@@ -17,7 +17,7 @@ const NavBar = ({onSearch}:Props) => {
             <ColorModeSwitch/>
         </HStack>
     </>
-  )
-}
+  );
+};
 
 export default NavBar
