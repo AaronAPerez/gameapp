@@ -28,7 +28,7 @@ const SortSelector = ({onSelectSortOrder}:Props) => {
   return (
     <>
         <Menu>
-            <MenuButton as={Button} rightIcon={<BiSolidChevronDown/>}>Order by {selectedSort ||'Relevance'}</MenuButton>
+            <MenuButton as={Button} rightIcon={<BiSolidChevronDown/>}>Order by {selectedSort ||'Relevence'}</MenuButton>
             <MenuList>
                 {sortOrders.map(order => <MenuItem onClick={() =>handleSelectedSort(order.value,order.label)} key={order.value} value={order.value}>{order.label}</MenuItem>)}
             </MenuList>

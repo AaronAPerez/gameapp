@@ -12,7 +12,7 @@ const GameCardSkeleton = () => {
             </Skeleton>
         </Card>
     </>
-  );
-};
+  )
+}
 
 export default GameCardSkeleton

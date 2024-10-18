@@ -16,7 +16,7 @@ const GameHeading = ({gameQuery}:Props) => {
         {heading}
         </Heading>
     </>
-  );
-};
+  )
+}
 
-export default GameHeading;
+export default GameHeading

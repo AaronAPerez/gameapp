@@ -12,7 +12,7 @@ const CriticScore = ({score}:Props) => {
             {score}
         </Badge>
     </>
-  );
-};
+  )
+}
 
 export default CriticScore
