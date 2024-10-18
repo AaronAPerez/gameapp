@@ -1,6 +1,6 @@
 ///All our imports we need
 
-import { SimpleGrid, Text } from "@chakra-ui/react";
+import { SimpleGrid } from "@chakra-ui/react";
 import useGames from "../hooks/useGames";
 import GameCard from "./GameCard";
 import GameCardSkeleton from "./GameCardSkeleton";
@@ -14,7 +14,7 @@ gameQuery: GameQuery
 
 const GameGrid = ({gameQuery}:Props) => {
   //custom game hook
-  const { data, error, isLoading } = useGames(gameQuery);
+  const { data, isLoading } = useGames(gameQuery);
   //We other helper function to add, delete or update data
 
   const skeleton = [
@@ -36,13 +36,13 @@ const GameGrid = ({gameQuery}:Props) => {
             </GameCardContainer>
           ))}
 
-        {data.map((game) => (
+        {data?.results.map((game) => (
           <GameCardContainer key={game.id}>
             <GameCard game={game} ></GameCard>
           </GameCardContainer>
         ))}
       </SimpleGrid>
-      {error && <Text color={"red"}>{error}</Text>}
+      {/* {error && <Text color={"red"}>{error}</Text>} */}
     </>
   );
 };
