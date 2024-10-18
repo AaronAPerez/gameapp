@@ -16,4 +16,4 @@ const usePlatform = () => useQuery({
                 .then(res => res.data),
                 staleTime: 24* 60* 60* 1000,
 })
-export default usePlatform
+export default usePlatform;
